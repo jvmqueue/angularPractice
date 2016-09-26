@@ -1,0 +1,29 @@
+body{
+    font-family:NeueHaasGroteskTextMedium,Arial,Helvetica,sans-serif;
+}
+.menuHorizontal li{
+    float:left;
+    margin-right:10px;
+    list-style:none;
+}
+.menuHorizontal li a{
+    font-size:12px;
+    text-decoration: none;
+}
+.menuHorizontal li a:hover{
+    color:#000000;
+}
+.activeBar{
+    border-top:2px solid #CD040B;
+}
+/* Begin Generics */
+.bold{
+    font-weight:bold;
+}
+/* End Generics */
+
+/* Begin Colors */
+.navGray *{
+    color:#7F7F7F;
+}
+/* End Colors */

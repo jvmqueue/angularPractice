@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>V Page Title</title>
+    <link rel="stylesheet" href="globalnav/css/globalnav-js.cb1c0ed03c.css" />
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="styles/main.css" />
+</head>
+<body ng-app="siteVerizon">
+    <div class="container" ng-controller="mainCtrl">
+        <nav class="menuHorizontal" ng-click="listenerNavMenu($event)">
+            <ul class="navGray bold">
+                <!-- Define activeBar css class to indicate presentation for item clicked -->
+                <!-- data-index tells controller which link was clicked -->                
+                <!-- blnItemActive[] is our model, $scope object -->
+                <li><a ng-class="{'activeBar':blnItemActive[0]}" data-index="0" href="#noTag">Wireless</a></li>
+                <li><a ng-class="{'activeBar':blnItemActive[1]}" data-index="1" href="#noTag">Residential</a></li>
+                <li><a ng-class="{'activeBar':blnItemActive[2]}" data-index="2" href="#noTag">Business</a></li>
+            </ul>
+        </nav>        
+    </div>
+</body>
+<script src="bower_components/jquery/dist/jquery.js"></script>
+<script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+<script src="bower_components/angular/angular.js"></script>
+<script src="bower_components/angular-bootstrap/ui-bootstrap.js"></script>
+<script src="bower_components/angular-route/angular-route.js"></script>
+<script src="scripts/app.js"></script>
+<script src="scripts/controllers/mainCtrl.js"></script>
+
+</html>
