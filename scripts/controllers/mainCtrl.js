@@ -10,7 +10,7 @@ angular.module('siteVerizon').controller('mainCtrl', ['$scope', function($scope)
             listenerNavMenu:function($event){
                 _fnc.resetMenus();
                 let target = $event.target;
-                let intDataIndex = parseInt($event.target.dataset.index);
+                let intDataIndex = parseInt(target.dataset.index);
                 $scope.blnItemActive[intDataIndex] = true;
             } // End _fnc.navMenu
 
