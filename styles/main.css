@@ -20,10 +20,38 @@ body{
 .bold{
     font-weight:bold;
 }
+.marginLeft{
+    margin-left:8%;
+}
+.floatRight{
+    float:right;
+}
+.floatLeft{
+    float:left;
+}
+.clearRight{
+    clear:right;
+}
+.clearLeft{
+    clear:left;
+}
+.clear{
+    clear:both;
+}
+
 /* End Generics */
 
 /* Begin Colors */
 .navGray *{
-    color:#7F7F7F;
+    color:#4B4B4B;
+}
+.red{
+    background-color:red;   
+}
+.green{
+    background-color:green;
+}
+.blue{
+    background-color:blue;
 }
 /* End Colors */
