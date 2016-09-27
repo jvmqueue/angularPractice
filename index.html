@@ -5,11 +5,12 @@
     <title>V Page Title</title>
     <link rel="stylesheet" href="globalnav/css/globalnav-js.cb1c0ed03c.css" />
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.css" />
     <link rel="stylesheet" href="styles/main.css" />
 </head>
-<body ng-app="siteVerizon">
+<body class="" ng-app="siteVerizon">
     <div class="container" ng-controller="mainCtrl">
-        <nav class="menuHorizontal" ng-click="listenerNavMenu($event)">
+        <nav class="menuHorizontal marginLeft" ng-click="listenerNavMenu($event)">
             <ul class="navGray bold">
                 <!-- Define activeBar css class to indicate presentation for item clicked -->
                 <!-- data-index tells controller which link was clicked -->                
@@ -19,7 +20,23 @@
                 <li><a ng-class="{'activeBar':blnItemActive[2]}" data-index="2" href="#noTag">Business</a></li>
             </ul>
         </nav>        
-    </div>
+        <nav class="menuHorizontal floatRight clearRight" ng-click="listenerNavMenu($event)">
+            <ul class="navGray bold">
+                <li><a ng-class="{'activeBar':blnItemActive[3]}" data-index="3" href="#noTag">Set Location</a></li>
+                <li><a ng-class="{'activeBar':blnItemActive[4]}" data-index="4" href="#noTag">Espa&#241;ol</a></li>
+                <li><a ng-class="{'activeBar':blnItemActive[5]}" data-index="5" href="#noTag">Contact Us</a></li>
+                <li>
+                    <i class="fa fa-user"></i>
+                    <a ng-class="{'activeBar':blnItemActive[6]}" data-index="6" href="#noTag">Sign In/Register</a>
+
+                </li>
+                <li>
+                    <i class="fa fa-shopping-cart"></i>
+                    <a class="" ng-class="{'activeBar':blnItemActive[7]}" data-index="7" href="#noTag">Cart</a>
+                </li>
+            </ul>
+        </nav>                
+    </div> <!-- End .container -->
 </body>
 <script src="bower_components/jquery/dist/jquery.js"></script>
 <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
